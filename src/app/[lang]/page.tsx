@@ -400,7 +400,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                                             {dict.Projects_Demo}
                                         </a>
                                     )}
-                                    <span className="project-link" style={{ marginLeft: 'auto' }}>{dict.Projects_Details} &rarr;</span>
+                                    <Link href={`/${lang}/projects/${project.slug}`} className="project-link" style={{ marginLeft: 'auto' }}>
+                                        {dict.Projects_Details} &rarr;
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -28,5 +28,13 @@ export default function VisitorTracker() {
     return () => clearTimeout(timeout);
   }, [pathname]);
 
+  // Handle scroll to top on refresh/mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.history.scrollRestoration = 'manual';
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   return null; // This component doesn't render anything
 }
