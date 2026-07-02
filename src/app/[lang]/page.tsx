@@ -2,6 +2,7 @@ import React from 'react';
 import ContactForm from '@/components/ContactForm';
 import Typewriter from '@/components/Typewriter';
 import { getDictionary, Locale } from '@/dictionaries';
+import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
