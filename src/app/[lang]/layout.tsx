@@ -12,7 +12,37 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'M.J. Habibie — Technical Consultant Analyst',
-  description: 'Portfolio of M.J. Habibie, .NET & Database Specialist.',
+  description: 'Portfolio of M.J. Habibie, .NET & Database Specialist. Expert in enterprise application development, SAP Business One, and high-performance APIs.',
+  keywords: ['M.J. Habibie', 'Habibie', 'Software Engineer', '.NET Developer', 'Backend Developer', 'SAP Business One', 'Technical Consultant', 'Indonesia', 'Portfolio', 'Fullstack'],
+  authors: [{ name: 'M.J. Habibie' }],
+  creator: 'M.J. Habibie',
+  publisher: 'M.J. Habibie',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'M.J. Habibie — Technical Consultant Analyst',
+    description: 'Portfolio of M.J. Habibie, .NET & Database Specialist. Building enterprise solutions one query at a time.',
+    url: 'https://mjhabibie.vercel.app',
+    siteName: 'M.J. Habibie Portfolio',
+    locale: 'id_ID',
+    alternateLocale: ['en_US'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'M.J. Habibie — Technical Consultant Analyst',
+    description: 'Portfolio of M.J. Habibie, .NET & Database Specialist.',
+  },
+  themeColor: '#0a0a14',
 };
 
 export default async function RootLayout({
