@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://mjhabibie.vercel.app/og-image.jpg',
+        width: 400,
+        height: 400,
         alt: 'Muhammad Jurnalies Habibie Portfolio',
       },
     ],
