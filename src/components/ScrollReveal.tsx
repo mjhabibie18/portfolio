@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     // Cari semua elemen dengan class fade-in-up
     const elements = document.querySelectorAll(".fade-in-up");
@@ -29,7 +32,7 @@ export default function ScrollReveal() {
     return () => {
       elements.forEach((el) => observer.unobserve(el));
     };
-  }, []);
+  }, [pathname]);
 
   return null; // Komponen ini hanya menjalankan logic JS, tidak merender UI tambahan
 }

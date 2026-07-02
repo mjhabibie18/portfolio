@@ -32,7 +32,10 @@ export default function VisitorTracker() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.history.scrollRestoration = 'manual';
-      window.scrollTo(0, 0);
+      // Hanya scroll ke atas jika tidak ada hash (misal #about) di URL
+      if (!window.location.hash) {
+        window.scrollTo(0, 0);
+      }
     }
   }, []);
 
