@@ -372,7 +372,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                       const description = (lang === 'en' && project.descriptionEn) ? project.descriptionEn : project.description;
 
                       return (
-                        <div key={project.id} className="project-card fade-in-up" style={{ transitionDelay: `${index * 0.1}s` }}>
+                        <div key={project.id} className="project-card fade-in-up" style={{ transitionDelay: `${index * 0.1}s`, position: 'relative' }}>
+                            {/* Invisible link covering the entire card */}
+                            <Link href={`/${lang}/projects/${project.slug}`} style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1 }} aria-label={`View details of ${title}`}></Link>
                             
                             {project.imageUrl ? (
                                 <img src={project.imageUrl} alt={title} className="project-card-image" loading="lazy" />
@@ -390,7 +392,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                                     ))}
                                 </div>
 
-                                <div className="project-links">
+                                <div className="project-links" style={{ position: 'relative', zIndex: 2 }}>
                                     {project.githubUrl && (
                                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
                                             {dict.Projects_GitHub}
