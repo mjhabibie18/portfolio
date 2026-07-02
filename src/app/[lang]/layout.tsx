@@ -11,7 +11,7 @@ import { getDictionary, Locale } from '@/dictionaries';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Muhammad Jurnalies Habibie — Technical Consultant Analyst',
+  title: 'Muhammad Jurnalies Habibie — Fullstack Developer & System Analyst',
   description: 'Portfolio of Muhammad Jurnalies Habibie, .NET & Database Specialist. Expert in enterprise application development, SAP Business One, and high-performance APIs.',
   keywords: ['Muhammad Jurnalies Habibie', 'M.J. Habibie', 'Habibie', 'Software Engineer', '.NET Developer', 'Backend Developer', 'SAP Business One', 'Technical Consultant', 'Indonesia', 'Portfolio', 'Fullstack'],
   authors: [{ name: 'Muhammad Jurnalies Habibie' }],
@@ -29,18 +29,27 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Muhammad Jurnalies Habibie — Technical Consultant Analyst',
+    title: 'Muhammad Jurnalies Habibie — Fullstack Developer & System Analyst',
     description: 'Portfolio of Muhammad Jurnalies Habibie, .NET & Database Specialist. Building enterprise solutions one query at a time.',
     url: 'https://mjhabibie.vercel.app',
     siteName: 'Muhammad Jurnalies Habibie Portfolio',
+    images: [
+      {
+        url: 'https://mjhabibie.vercel.app/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Muhammad Jurnalies Habibie Portfolio',
+      },
+    ],
     locale: 'id_ID',
     alternateLocale: ['en_US'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Jurnalies Habibie — Technical Consultant Analyst',
+    title: 'Muhammad Jurnalies Habibie — Fullstack Developer & System Analyst',
     description: 'Portfolio of Muhammad Jurnalies Habibie, .NET & Database Specialist.',
+    images: ['https://mjhabibie.vercel.app/og-image.jpg'],
   },
   themeColor: '#0a0a14',
 };
