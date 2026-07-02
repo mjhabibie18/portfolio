@@ -19,7 +19,7 @@ export default function ContactForm({ dict, lang }: { dict: any; lang: string })
     };
 
     try {
-      const res = await fetch("http://localhost:5131/api/portfolio/contact", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

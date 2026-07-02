@@ -58,7 +58,7 @@ interface Skill {
 // --- Fetch Functions ---
 async function getProfile(): Promise<Profile | null> {
   try {
-    const res = await fetch("http://localhost:5131/api/portfolio/profile", { cache: "no-store" });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/profile`, { cache: "no-store" });
     if (!res.ok) return null;
     return await res.json();
   } catch (e) {
@@ -68,7 +68,7 @@ async function getProfile(): Promise<Profile | null> {
 
 async function getProjects(): Promise<Project[]> {
   try {
-    const res = await fetch("http://localhost:5131/api/portfolio/projects", { cache: "no-store" });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/projects`, { cache: "no-store" });
     if (!res.ok) return [];
     return await res.json();
   } catch (e) {
@@ -78,7 +78,7 @@ async function getProjects(): Promise<Project[]> {
 
 async function getExperiences(): Promise<Experience[]> {
   try {
-    const res = await fetch("http://localhost:5131/api/portfolio/experiences", { cache: "no-store" });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/experiences`, { cache: "no-store" });
     if (!res.ok) return [];
     return await res.json();
   } catch (e) {
@@ -88,7 +88,7 @@ async function getExperiences(): Promise<Experience[]> {
 
 async function getSkills(): Promise<Skill[]> {
   try {
-    const res = await fetch("http://localhost:5131/api/portfolio/skills", { cache: "no-store" });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/skills`, { cache: "no-store" });
     if (!res.ok) return [];
     return await res.json();
   } catch (e) {
