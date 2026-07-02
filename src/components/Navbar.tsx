@@ -40,7 +40,7 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="navbar-links" id="navbar-links" style={{ display: isMenuOpen ? 'flex' : undefined }} className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+        <div id="navbar-links" style={{ display: isMenuOpen ? 'flex' : undefined }} className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
           <a href="#about" onClick={(e) => handleScrollTo(e, 'about')}>{dict.Nav_About}</a>
           <a href="#experience" onClick={(e) => handleScrollTo(e, 'experience')}>{dict.Nav_Experience}</a>
           <a href="#skills" onClick={(e) => handleScrollTo(e, 'skills')}>{dict.Nav_Skills}</a>
