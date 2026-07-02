@@ -28,6 +28,9 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
     if (element) {
       const y = element.getBoundingClientRect().top + window.scrollY - 80;
       window.scrollTo({ top: y, behavior: 'smooth' });
+    } else {
+      // Jika elemen tidak ada (misal sedang di halaman detail project), arahkan ke halaman utama
+      window.location.href = `/${lang}/#${targetId}`;
     }
   };
 
