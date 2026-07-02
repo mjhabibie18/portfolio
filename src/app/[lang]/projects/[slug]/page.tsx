@@ -84,15 +84,15 @@ export default async function ProjectDetail({ params }: { params: Promise<{ lang
         )}
 
         {/* Content Grid */}
-        <div className="about-grid fade-in-up delay-2">
+        <div className="fade-in-up delay-2" style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem' }}>
           
           {/* Main Context */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+          <div style={{ flex: '1 1 600px', display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {problem && (
               <div>
                 <h2 className="section-title" style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{dict.Detail_Problem}</h2>
                 <div className="section-label" style={{ marginBottom: '1rem' }}>{dict.Detail_ProblemSub}</div>
-                <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8 }}>{problem}</p>
+                <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>{problem}</p>
               </div>
             )}
             
@@ -100,7 +100,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ lang
               <div>
                 <h2 className="section-title" style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{dict.Detail_Solution}</h2>
                 <div className="section-label" style={{ marginBottom: '1rem' }}>{dict.Detail_SolutionSub}</div>
-                <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8 }}>{solution}</p>
+                <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>{solution}</p>
               </div>
             )}
             
@@ -108,13 +108,13 @@ export default async function ProjectDetail({ params }: { params: Promise<{ lang
               <div>
                 <h2 className="section-title" style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{dict.Detail_Impact}</h2>
                 <div className="section-label" style={{ marginBottom: '1rem' }}>{dict.Detail_ImpactSub}</div>
-                <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8 }}>{impact}</p>
+                <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>{impact}</p>
               </div>
             )}
           </div>
 
           {/* Sidebar Links */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ flex: '1 1 300px', maxWidth: '400px', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <div className="glass-card" style={{ padding: '2rem' }}>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.2rem', marginBottom: '1.5rem', fontWeight: 700 }}>Project Links</h3>
               
