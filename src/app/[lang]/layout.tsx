@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import ScrollReveal from '@/components/ScrollReveal';
 import Navbar from '@/components/Navbar';
 import ChatWidget from '@/components/ChatWidget';
+import VisitorTracker from '@/components/VisitorTracker';
 import { getDictionary, Locale } from '@/dictionaries';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -41,6 +42,7 @@ export default async function RootLayout({
         </footer>
 
         <ChatWidget placeholder={dict.Chat_Input} />
+        <VisitorTracker />
       </body>
     </html>
   );
