@@ -225,7 +225,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                   {dict.About_Title} <span className="gradient-text">{dict.About_TitleHighlight}</span>
               </h2>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '4rem', alignItems: 'center' }} className="fade-in-up delay-2">
+              <div className="about-grid fade-in-up delay-2">
                   <div>
                       <div style={{ color: 'var(--color-text-secondary)', lineHeight: '1.9', marginBottom: '2rem', fontSize: '1rem' }}>
                           {(lang === 'en' && profile.aboutSummaryEn ? profile.aboutSummaryEn : profile.aboutSummary) ? (
