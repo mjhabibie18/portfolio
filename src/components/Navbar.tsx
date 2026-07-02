@@ -35,7 +35,13 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner">
-        <Link href={`/${lang}`} className="navbar-brand" onClick={closeMenu}>
+        <Link href={`/${lang}`} className="navbar-brand" onClick={(e) => {
+          closeMenu();
+          if (pathname === `/${lang}`) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }}>
           Habibie<span style={{ color: 'var(--color-primary)' }}>&#125;</span>
         </Link>
 
