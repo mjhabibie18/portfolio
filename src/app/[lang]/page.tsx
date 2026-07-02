@@ -96,9 +96,9 @@ async function getSkills(): Promise<Skill[]> {
   }
 }
 
-export default async function Home({ params }: { params: Promise<{ lang: Locale }> }) {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = await params;
-  const lang = resolvedParams.lang;
+  const lang = resolvedParams.lang as Locale;
   const dict = await getDictionary(lang);
 
   const [profileData, projects, experiences, skills] = await Promise.all([
