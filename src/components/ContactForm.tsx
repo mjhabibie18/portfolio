@@ -19,8 +19,7 @@ export default function ContactForm({ dict, lang }: { dict: any; lang: string })
     };
 
     try {
-      const API_URL = (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
-      const res = await fetch(`${API_URL}/api/portfolio/contact`, {
+      const res = await fetch(`/api/portfolio/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -31,8 +31,7 @@ export default function ChatWidget({ placeholder }: { placeholder: string }) {
     setIsLoading(true);
 
     try {
-      const API_URL = (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
-      const response = await fetch(`${API_URL}/api/chat`, {
+      const response = await fetch(`/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage })
