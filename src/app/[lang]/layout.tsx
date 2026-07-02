@@ -11,12 +11,12 @@ import { getDictionary, Locale } from '@/dictionaries';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'M.J. Habibie — Technical Consultant Analyst',
-  description: 'Portfolio of M.J. Habibie, .NET & Database Specialist. Expert in enterprise application development, SAP Business One, and high-performance APIs.',
-  keywords: ['M.J. Habibie', 'Habibie', 'Software Engineer', '.NET Developer', 'Backend Developer', 'SAP Business One', 'Technical Consultant', 'Indonesia', 'Portfolio', 'Fullstack'],
-  authors: [{ name: 'M.J. Habibie' }],
-  creator: 'M.J. Habibie',
-  publisher: 'M.J. Habibie',
+  title: 'Muhammad Jurnalies Habibie — Technical Consultant Analyst',
+  description: 'Portfolio of Muhammad Jurnalies Habibie, .NET & Database Specialist. Expert in enterprise application development, SAP Business One, and high-performance APIs.',
+  keywords: ['Muhammad Jurnalies Habibie', 'M.J. Habibie', 'Habibie', 'Software Engineer', '.NET Developer', 'Backend Developer', 'SAP Business One', 'Technical Consultant', 'Indonesia', 'Portfolio', 'Fullstack'],
+  authors: [{ name: 'Muhammad Jurnalies Habibie' }],
+  creator: 'Muhammad Jurnalies Habibie',
+  publisher: 'Muhammad Jurnalies Habibie',
   robots: {
     index: true,
     follow: true,
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'M.J. Habibie — Technical Consultant Analyst',
-    description: 'Portfolio of M.J. Habibie, .NET & Database Specialist. Building enterprise solutions one query at a time.',
+    title: 'Muhammad Jurnalies Habibie — Technical Consultant Analyst',
+    description: 'Portfolio of Muhammad Jurnalies Habibie, .NET & Database Specialist. Building enterprise solutions one query at a time.',
     url: 'https://mjhabibie.vercel.app',
-    siteName: 'M.J. Habibie Portfolio',
+    siteName: 'Muhammad Jurnalies Habibie Portfolio',
     locale: 'id_ID',
     alternateLocale: ['en_US'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'M.J. Habibie — Technical Consultant Analyst',
-    description: 'Portfolio of M.J. Habibie, .NET & Database Specialist.',
+    title: 'Muhammad Jurnalies Habibie — Technical Consultant Analyst',
+    description: 'Portfolio of Muhammad Jurnalies Habibie, .NET & Database Specialist.',
   },
   themeColor: '#0a0a14',
 };
