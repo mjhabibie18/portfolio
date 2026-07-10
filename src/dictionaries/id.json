@@ -73,6 +73,7 @@
   "Contact_Sending": "Mengirim...",
   
   "Chat_Input": "Ketik pesan...",
+  "Chat_Greeting": "Halo! Saya asisten virtual M.J. Habibie. Ada yang bisa saya bantu?",
 
   "Footer_Text": "Dibuat dengan C# & Next.js"
 }

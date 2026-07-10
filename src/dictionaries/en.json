@@ -73,6 +73,7 @@
   "Contact_Sending": "Sending...",
   
   "Chat_Input": "Type a message...",
+  "Chat_Greeting": "Hello! I am M.J. Habibie's virtual assistant. How can I help you?",
 
   "Footer_Text": "Built with C# & Next.js"
 }

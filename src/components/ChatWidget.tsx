@@ -2,10 +2,10 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 
-export default function ChatWidget({ placeholder }: { placeholder: string }) {
+export default function ChatWidget({ placeholder, greeting }: { placeholder: string, greeting: string }) {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ sender: 'user' | 'ai', text: string }[]>([
-    { sender: 'ai', text: 'Halo! Saya asisten virtual M.J. Habibie. Ada yang bisa saya bantu?' }
+    { sender: 'ai', text: greeting }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);

@@ -80,7 +80,7 @@ export default async function RootLayout({
           &copy; {new Date().getFullYear()} Muhammad Jurnalies Habibie
         </footer>
 
-        <ChatWidget placeholder={dict.Chat_Input} />
+        <ChatWidget placeholder={dict.Chat_Input} greeting={dict.Chat_Greeting} />
         <VisitorTracker />
       </body>
     </html>
